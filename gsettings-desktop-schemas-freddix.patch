@@ -1,0 +1,41 @@
+diff -aurN gsettings-desktop-schemas-3.4.0.orig/schemas/org.gnome.desktop.interface.gschema.xml.in.in gsettings-desktop-schemas-3.4.0/schemas/org.gnome.desktop.interface.gschema.xml.in.in
+--- gsettings-desktop-schemas-3.4.0.orig/schemas/org.gnome.desktop.interface.gschema.xml.in.in	2012-04-15 23:04:02.325653751 +0200
++++ gsettings-desktop-schemas-3.4.0/schemas/org.gnome.desktop.interface.gschema.xml.in.in	2012-04-15 23:11:25.243116522 +0200
+@@ -118,7 +118,7 @@
+       </_description>
+     </key>
+     <key name="font-name" type="s">
+-      <default>'Cantarell 11'</default>
++      <default>'Droid Sans 11'</default>
+       <_summary>Default font</_summary>
+       <_description>
+         Name of the default font used by gtk+.
+@@ -154,14 +154,14 @@
+       </_description>
+     </key>
+     <key name="document-font-name" type="s">
+-      <default>'Sans 11'</default>
++      <default>'Droid Sans 11'</default>
+       <_summary>Document font</_summary>
+       <_description>
+         Name of the default font used for reading documents.
+       </_description>
+     </key>
+     <key name="monospace-font-name" type="s">
+-      <default>'Monospace 11'</default>
++      <default>'Droid Sans Mono 10'</default>
+       <_summary>Monospace font</_summary>
+       <_description>
+         Name of a monospaced (fixed-width) font for use in locations like
+diff -aurN gsettings-desktop-schemas-3.4.0.orig/schemas/org.gnome.desktop.wm.preferences.gschema.xml.in.in gsettings-desktop-schemas-3.4.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml.in.in
+--- gsettings-desktop-schemas-3.4.0.orig/schemas/org.gnome.desktop.wm.preferences.gschema.xml.in.in	2012-04-15 23:04:02.325653751 +0200
++++ gsettings-desktop-schemas-3.4.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml.in.in	2012-04-15 23:10:36.571724996 +0200
+@@ -204,7 +204,7 @@
+       </_description>
+     </key>
+     <key name="titlebar-font" type="s">
+-      <default>'Cantarell Bold 11'</default>
++      <default>'Droid Sans Bold 10'</default>
+       <_summary>Window title font</_summary>
+       <_description>
+         A font description string describing a font for window titlebars.
