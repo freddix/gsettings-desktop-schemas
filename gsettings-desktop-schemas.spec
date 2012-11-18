@@ -1,12 +1,11 @@
 Summary:	A collection of GSettings schemas
 Name:		gsettings-desktop-schemas
-Version:	3.6.0
-Release:	2
+Version:	3.6.1
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.6/%{name}-%{version}.tar.xz
-# Source0-md5:	56bac1a55d71a5e30795447e227bdb26
-Patch0:		%{name}-freddix.patch
+# Source0-md5:	5f7d7c88c04b1abcf59c3f27027c05c2
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -30,7 +29,6 @@ Development files for gsettings-desktop-schemas.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 %{__intltoolize}
