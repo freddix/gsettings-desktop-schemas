@@ -1,11 +1,11 @@
 Summary:	A collection of GSettings schemas
 Name:		gsettings-desktop-schemas
-Version:	3.6.1
+Version:	3.8.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.6/%{name}-%{version}.tar.xz
-# Source0-md5:	5f7d7c88c04b1abcf59c3f27027c05c2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.8/%{name}-%{version}.tar.xz
+# Source0-md5:	b42dd36beb8af4eb1056d2b782d962e7
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -71,7 +71,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
