@@ -1,20 +1,20 @@
 Summary:	A collection of GSettings schemas
 Name:		gsettings-desktop-schemas
-Version:	3.10.1
+Version:	3.12.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.10/%{name}-%{version}.tar.xz
-# Source0-md5:	f9ffca591a984f19a1dd9caeb96b5f23
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.12/%{name}-%{version}.tar.xz
+# Source0-md5:	cb5ae0d658d0627f8727672bbd5267f0
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	glib-devel >= 1:2.38.0
-BuildRequires:	gobject-introspection-devel >= 1.38.0
+BuildRequires:	glib-devel >= 1:2.40.0
+BuildRequires:	gobject-introspection-devel >= 1.40.0
 BuildRequires:	intltool
 BuildRequires:	pkg-config
-Requires(post,postun):	glib-gio-gsettings >= 1:2.38.0
+Requires(post,postun):	glib-gio-gsettings >= 1:2.40.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,6 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/GConf
+
 %find_lang %{name}
 
 %clean
@@ -65,6 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
