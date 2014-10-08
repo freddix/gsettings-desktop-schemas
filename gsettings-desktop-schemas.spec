@@ -1,20 +1,20 @@
 Summary:	A collection of GSettings schemas
 Name:		gsettings-desktop-schemas
-Version:	3.12.0
+Version:	3.14.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	cb5ae0d658d0627f8727672bbd5267f0
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.14/%{name}-%{version}.tar.xz
+# Source0-md5:	14df59945fc9027b303ecfa75200a0c9
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	glib-devel >= 1:2.40.0
-BuildRequires:	gobject-introspection-devel >= 1.40.0
+BuildRequires:	glib-devel >= 1:2.42.0
+BuildRequires:	gobject-introspection-devel >= 1.42.0
 BuildRequires:	intltool
 BuildRequires:	pkg-config
-Requires(post,postun):	glib-gio-gsettings >= 1:2.40.0
+Requires(post,postun):	glib-gio-gsettings >= 1:2.42.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -87,6 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.system.location.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
 
 %files devel
