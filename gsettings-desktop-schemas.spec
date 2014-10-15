@@ -1,11 +1,11 @@
 Summary:	A collection of GSettings schemas
 Name:		gsettings-desktop-schemas
-Version:	3.14.0
+Version:	3.14.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.14/%{name}-%{version}.tar.xz
-# Source0-md5:	14df59945fc9027b303ecfa75200a0c9
+# Source0-md5:	92d41934212fc7da48648afa3927f4b0
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
